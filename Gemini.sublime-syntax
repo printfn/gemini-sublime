@@ -1,0 +1,49 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+name: Gemini
+file_extensions:
+  - gemini
+  - gmi
+version: 2
+scope: source.gemini
+contexts:
+  main:
+    - match: "^(#)(?:[^#].*)?\n"
+      scope: markup.heading.1.gemini
+      captures:
+        1: punctuation.definition.heading.1.gemini
+
+    - match: "^(##)(?:[^#].*)?\n"
+      scope: markup.heading.2.gemini
+      captures:
+        1: punctuation.definition.heading.2.gemini
+
+    - match: "^(###)(?:[^#].*)?\n"
+      scope: markup.heading.3.gemini
+      captures:
+        1: punctuation.definition.heading.3.gemini
+
+    - match: "^(```)(.*)\n"
+      push: raw
+      captures:
+        1: punctuation.definition.raw.code-fence.begin.gemini
+        2: meta.code-fence.definition.begin.gemini
+
+    - match: "^(\\*)[ \t]+.+\n"
+      scope: markup.list.unnumbered.gemini
+      captures:
+        1: punctuation.definition.list.begin.gemini
+
+    - match: "^(=>)[ \t]+([^ \t]+)(?:[ \t]+(.*))?"
+      captures:
+        1: punctuation.definition.link.begin.gemini
+        2: markup.underline.link.gemini
+        3: meta.link.inline.description.gemini
+
+  raw:
+    - meta_content_scope: markup.raw.gemini
+    - match: "^(```).*\n"
+      pop: true
+      captures:
+        1: punctuation.definition.raw.code-fence.end.gemini
