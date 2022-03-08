@@ -7,3 +7,5 @@ documents (with the `.gmi` extension) to Sublime Text.
 Specification: <gemini://gemini.circumlunar.space/docs/specification.gmi>
 
 Specification (HTTP Mirror): <https://gemini.circumlunar.space/docs/specification.gmi>
+
+Gemini syntax cheatsheet: <https://gemini.circumlunar.space/docs/cheatsheet.gmi>
