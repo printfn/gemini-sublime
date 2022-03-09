@@ -1,0 +1,6 @@
+# Releasing a new version
+
+* Commit to the printfn/gemini-sublime repo
+* Make a semver-compatible tag
+
+There's no need to update anything else, Sublime Text will automatically find the new version.
