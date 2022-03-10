@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.8
+
+* Fix highlighting of bullet point lists
+
 ## 1.0.7
 
 * Disable source code specific features, including autocompletion, that

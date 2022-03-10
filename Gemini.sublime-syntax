@@ -33,7 +33,7 @@ contexts:
     - match: "^(\\*)[ \t]+.+\n"
       scope: markup.list.unnumbered.gemini
       captures:
-        1: punctuation.definition.list.begin.gemini
+        1: punctuation.definition.list_item.gemini
 
     - match: "^(=>)[ \t]+([^ \t]+)(?:[ \t]+(.*))?"
       captures:
