@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.6
+
+* Use `.gmi` extension by default when creating a new file
+
 ## 1.0.5
 
 * Remove `gemini` annotation from README code block since it

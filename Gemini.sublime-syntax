@@ -3,8 +3,8 @@
 # See http://www.sublimetext.com/docs/syntax.html
 name: Gemini
 file_extensions:
+  - gmi # this is used by default, so it should be listed first
   - gemini
-  - gmi
 version: 2
 scope: source.gemini
 contexts:
