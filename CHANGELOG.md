@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.7
+
+* Disable source code specific features, including autocompletion, that
+    aren't applicable to markup
+* Support Gemini quote syntax (i.e. `>`)
+
 ## 1.0.6
 
 * Use `.gmi` extension by default when creating a new file

@@ -41,6 +41,11 @@ contexts:
         2: markup.underline.link.gemini
         3: meta.link.inline.description.gemini
 
+    - match: "^(>).*\n"
+      scope: markup.quote.gemini
+      captures:
+        1: punctuation.definition.blockquote.gemini
+
   raw:
     - meta_content_scope: markup.raw.block.gemini
     - match: "^(```).*\n"
