@@ -6,7 +6,7 @@ file_extensions:
   - gmi # this is used by default, so it should be listed first
   - gemini
 version: 2
-scope: source.gemini
+scope: text.gemini
 contexts:
   main:
     - match: "^(#)(?:[^#].*)?\n"
@@ -42,7 +42,7 @@ contexts:
         3: meta.link.inline.description.gemini
 
   raw:
-    - meta_content_scope: markup.raw.gemini
+    - meta_content_scope: markup.raw.block.gemini
     - match: "^(```).*\n"
       pop: true
       captures:
