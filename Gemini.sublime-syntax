@@ -9,17 +9,17 @@ version: 2
 scope: text.gemini
 contexts:
   main:
-    - match: "^(#)(?:[^#].*)?\n"
+    - match: "^(#)(?:[^#].*)?$"
       scope: markup.heading.1.gemini
       captures:
         1: punctuation.definition.heading.1.gemini
 
-    - match: "^(##)(?:[^#].*)?\n"
+    - match: "^(##)(?:[^#].*)?$"
       scope: markup.heading.2.gemini
       captures:
         1: punctuation.definition.heading.2.gemini
 
-    - match: "^(###)(?:[^#].*)?\n"
+    - match: "^(###)(?:[^#].*)?$"
       scope: markup.heading.3.gemini
       captures:
         1: punctuation.definition.heading.3.gemini
@@ -28,12 +28,12 @@ contexts:
       push: raw
       captures:
         1: punctuation.definition.raw.code-fence.begin.gemini
-        2: meta.code-fence.definition.begin.gemini
+        2: constant.other.language-name.gemini
 
     - match: "^(\\*)[ \t]+.+\n"
-      scope: markup.list.unnumbered.gemini
+      scope: punctuation.definition.list_item.gemini
       captures:
-        1: punctuation.definition.list_item.gemini
+        1: markup.list.unnumbered.bullet.gemini
 
     - match: "^(=>)[ \t]+([^ \t]+)(?:[ \t]+(.*))?"
       captures:
@@ -41,7 +41,7 @@ contexts:
         2: markup.underline.link.gemini
         3: meta.link.inline.description.gemini
 
-    - match: "^(>).*\n"
+    - match: "^(>).*$"
       scope: markup.quote.gemini
       captures:
         1: punctuation.definition.blockquote.gemini

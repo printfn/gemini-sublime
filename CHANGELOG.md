@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.9
+
+* Fix highlighting of headings at end of file
+* Ensure bullet points are highlighted correctly
+* Support language names for block code syntax (with three backticks)
+
 ## 1.0.8
 
 * Fix highlighting of bullet point lists
