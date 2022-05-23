@@ -23,7 +23,7 @@
 ## 1.0.5
 
 * Remove `gemini` annotation from README code block since it
-    resultet in an error message on
+    resulted in an error message on
     [packagecontrol.io](https://packagecontrol.io/packages/Gemini)
 * Add changelog
 
