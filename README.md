@@ -14,7 +14,7 @@ Find out more details [here](https://packagecontrol.io/packages/Gemini).
 
 ## Example Syntax
 
-````
+````gmi
 # Heading
 
 ## Smaller heading
