@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.10
+
+* Update links to point to [geminiprotocol.net](https://geminiprotocol.net)
+
 ## 1.0.9
 
 * Fix highlighting of headings at end of file
